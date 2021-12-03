@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		35671666275A29C200023CA2 /* sjis_sp_setofont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 35671665275A29C200023CA2 /* sjis_sp_setofont.ttf */; };
 		3588AA31273E7FCF006F70E6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588AA30273E7FCF006F70E6 /* AppDelegate.swift */; };
 		3588AA33273E7FCF006F70E6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588AA32273E7FCF006F70E6 /* SceneDelegate.swift */; };
 		3588AA35273E7FCF006F70E6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3588AA34273E7FCF006F70E6 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		35671665275A29C200023CA2 /* sjis_sp_setofont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = sjis_sp_setofont.ttf; path = "which-taiyaki/font/sjis_sp_setofont.ttf"; sourceTree = "<group>"; };
 		3588AA2D273E7FCF006F70E6 /* which-taiyaki.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "which-taiyaki.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3588AA30273E7FCF006F70E6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3588AA32273E7FCF006F70E6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -40,6 +42,7 @@
 		3588AA24273E7FCF006F70E6 = {
 			isa = PBXGroup;
 			children = (
+				35671665275A29C200023CA2 /* sjis_sp_setofont.ttf */,
 				3588AA2F273E7FCF006F70E6 /* which-taiyaki */,
 				3588AA2E273E7FCF006F70E6 /* Products */,
 			);
@@ -124,6 +127,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35671666275A29C200023CA2 /* sjis_sp_setofont.ttf in Resources */,
 				3588AA3D273E7FD1006F70E6 /* LaunchScreen.storyboard in Resources */,
 				3588AA3A273E7FD1006F70E6 /* Assets.xcassets in Resources */,
 				3588AA38273E7FCF006F70E6 /* Main.storyboard in Resources */,
