@@ -21,7 +21,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="無題279_20211210201136" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-Ch-Ytg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="haikei" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-Ch-Ytg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -61,10 +61,10 @@
             </objects>
             <point key="canvasLocation" x="-313.04347826086956" y="92.410714285714278"/>
         </scene>
-        <!--View Controller-->
+        <!--Game1 Controller-->
         <scene sceneID="XGk-Ug-nTy">
             <objects>
-                <viewController id="Bax-sZ-rCy" sceneMemberID="viewController">
+                <viewController id="Bax-sZ-rCy" customClass="game1Controller" customModule="which_taiyaki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sxw-Qa-Ezc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,40 +91,15 @@
                                 <state key="normal" title="中身を取り出す">
                                     <color key="titleColor" red="0.67511014364429189" green="0.59245826664960843" blue="0.80177029700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="a" destination="Bax-sZ-rCy" eventType="touchUpInside" id="Puh-Xa-eBU"/>
+                                </connections>
                             </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="Mw3-u6-cOe"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="kKa-zO-ujq"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-NX-ym4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="592.75362318840587" y="91.741071428571431"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="mMO-Pq-sGH">
-            <objects>
-                <viewController id="xOa-iI-1KJ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="PPY-3X-XRR">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[                            ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4u-Hj-ICb">
-                                <rect key="frame" x="214" y="827" width="161" height="28"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ta5" translatesAutoresizingMaskIntoConstraints="NO" id="am3-L1-3vB">
+                                <rect key="frame" x="0.0" y="180" width="414" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="asm-Rj-NSm">
-                                <rect key="frame" x="55" y="827" width="108" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mdc-FD-39L">
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgD-gc-6gj">
                                 <rect key="frame" x="150" y="44" width="115" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="100"/>
@@ -132,13 +107,17 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="pZx-Ah-xDK"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <viewLayoutGuide key="safeArea" id="Mw3-u6-cOe"/>
+                        <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="kKa-zO-ujq"/>
+                    <connections>
+                        <outlet property="image1" destination="am3-L1-3vB" id="ob4-tA-9hp"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="twr-sQ-Gxv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-NX-ym4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1542" y="92"/>
+            <point key="canvasLocation" x="592.75362318840587" y="91.741071428571431"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="2dd-zf-LhI">
@@ -201,7 +180,8 @@
         <segue reference="OP8-oD-GGw"/>
     </inferredMetricsTieBreakers>
     <resources>
-        <image name="無題279_20211210201136" width="414" height="896"/>
+        <image name="haikei" width="414" height="896"/>
+        <image name="ta5" width="1280" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
