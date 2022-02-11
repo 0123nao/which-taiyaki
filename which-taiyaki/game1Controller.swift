@@ -10,43 +10,75 @@ import UIKit
 class game1Controller: UIViewController {
     
     var number: Int!
+    var point: Int! = 0
+    @IBOutlet var pointlabel: UILabel!
+    
     
     @IBOutlet var image1: UIImageView!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         
-       
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
-}
-    @IBAction func a (){
-    number = Int.random(in: 0...3)
-    
-        if number == 0 {
-            image1.image = UIImage(named: "ta1")
-           
-           
-        } else if number == 1 {
-            image1.image = UIImage(named: "ta2")
+        
+        
+        /*
+         // MARK: - Navigation
          
+         // In a storyboard-based application, you will often want to do a little preparation before navigation
+         override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+         // Get the new view controller using segue.destination.
+         // Pass the selected object to the new view controller.
+         }
+         */
+        
+    }
+    @IBAction func a (){
+        number = Int.random(in: 1...4)
+        
+        if number == 1 {
+            image1.image = UIImage(named: "ta1")
+            
+            
         } else if number == 2 {
+            image1.image = UIImage(named: "ta2")
+            
+        } else if number == 3 {
             image1.image = UIImage(named: "ta3")
-                          
+            
         } else {
             image1.image = UIImage(named: "ta4")
-           
+            
+        }
+    }
+    
+    // 良いたい焼きのボタンが押された時
+    // numberが１，２の時は１点
+    @IBAction func b (){
+        
+        if number == 1 {
+           point = point + 1
+            
+        } else if number == 2 {
+            point = point + 1
+        
+        }
+    
+        pointlabel.text = String(point!)
+    
+    }
+    
+    // 悪いたい焼きのボタンが押された時
+    // numberが3,4の時はおわり
+    @IBAction func c (){
+        if number == 3 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 4 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+        
+    
 }
     }
 }

@@ -106,6 +106,22 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-Wg-0LC">
+                                <rect key="frame" x="0.0" y="479" width="196" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="no good"/>
+                                <connections>
+                                    <action selector="c" destination="Bax-sZ-rCy" eventType="touchUpInside" id="fKz-5t-4M1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-gz-ge4">
+                                <rect key="frame" x="218" y="479" width="196" height="181"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="good"/>
+                                <connections>
+                                    <action selector="b" destination="Bax-sZ-rCy" eventType="touchUpInside" id="PFj-4o-5yz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mw3-u6-cOe"/>
                         <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -113,6 +129,8 @@
                     <navigationItem key="navigationItem" id="kKa-zO-ujq"/>
                     <connections>
                         <outlet property="image1" destination="am3-L1-3vB" id="ob4-tA-9hp"/>
+                        <outlet property="pointlabel" destination="u4j-Jq-O8r" id="evs-E6-yWX"/>
+                        <segue destination="P3W-z4-76M" kind="presentation" identifier="result" id="Dfn-xb-ZjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-NX-ym4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,7 +142,7 @@
             <objects>
                 <viewController id="P3W-z4-76M" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vGW-ZA-oaf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-UD-TZp">
@@ -177,10 +195,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OP8-oD-GGw"/>
+        <segue reference="Dfn-xb-ZjX"/>
+        <segue reference="kAc-Kt-cim"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="good" width="1280" height="1280"/>
         <image name="haikei" width="414" height="896"/>
+        <image name="no good" width="1280" height="1280"/>
         <image name="ta5" width="1280" height="1280"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
