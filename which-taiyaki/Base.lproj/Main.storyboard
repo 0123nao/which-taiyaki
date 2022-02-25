@@ -28,7 +28,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-IQ-jHI">
                                 <rect key="frame" x="93" y="697" width="229" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31672279482322102" green="0.37352099932463617" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="66"/>
                                 <state key="normal" title="start">
                                     <color key="titleColor" red="0.80177029696377844" green="0.60657116123053223" blue="0.64921316006786889" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -76,38 +76,19 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[                            ]" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Jq-O8r">
-                                <rect key="frame" x="214" y="827" width="161" height="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="                          0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Jq-O8r">
+                                <rect key="frame" x="214" y="827" width="149" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-G7-82J">
-                                <rect key="frame" x="55" y="711" width="304" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.3297470248203011" green="0.38892344189676092" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="41"/>
-                                <state key="normal" title="中身を取り出す">
-                                    <color key="titleColor" red="0.67511014364429189" green="0.59245826664960843" blue="0.80177029700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="a" destination="Bax-sZ-rCy" eventType="touchUpInside" id="Puh-Xa-eBU"/>
-                                </connections>
-                            </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ta5" translatesAutoresizingMaskIntoConstraints="NO" id="am3-L1-3vB">
-                                <rect key="frame" x="0.0" y="180" width="414" height="273"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="273"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TgD-gc-6gj">
-                                <rect key="frame" x="150" y="44" width="115" height="125"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="100"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-Wg-0LC">
-                                <rect key="frame" x="0.0" y="479" width="196" height="181"/>
+                                <rect key="frame" x="0.0" y="377" width="196" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="no good"/>
                                 <connections>
@@ -115,11 +96,23 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-gz-ge4">
-                                <rect key="frame" x="218" y="479" width="196" height="181"/>
+                                <rect key="frame" x="218" y="377" width="196" height="181"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="good"/>
                                 <connections>
                                     <action selector="b" destination="Bax-sZ-rCy" eventType="touchUpInside" id="PFj-4o-5yz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-G7-82J">
+                                <rect key="frame" x="55" y="641" width="304" height="53"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="41"/>
+                                <state key="normal" title="中身を取り出す">
+                                    <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="a" destination="Bax-sZ-rCy" eventType="touchUpInside" id="Puh-Xa-eBU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -128,38 +121,33 @@
                     </view>
                     <navigationItem key="navigationItem" id="kKa-zO-ujq"/>
                     <connections>
+                        <outlet property="button1" destination="w2Y-G7-82J" id="ij9-Z2-UtL"/>
+                        <outlet property="button2" destination="6CK-gz-ge4" id="tPV-BK-92e"/>
+                        <outlet property="button3" destination="ua3-Wg-0LC" id="e9X-wi-6ca"/>
                         <outlet property="image1" destination="am3-L1-3vB" id="ob4-tA-9hp"/>
                         <outlet property="pointlabel" destination="u4j-Jq-O8r" id="evs-E6-yWX"/>
-                        <segue destination="P3W-z4-76M" kind="presentation" identifier="result" id="Dfn-xb-ZjX"/>
+                        <segue destination="P3W-z4-76M" kind="presentation" identifier="result" modalPresentationStyle="fullScreen" id="Dfn-xb-ZjX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-NX-ym4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="592.75362318840587" y="91.741071428571431"/>
+            <point key="canvasLocation" x="814" y="102"/>
         </scene>
-        <!--View Controller-->
+        <!--Game2 Controller-->
         <scene sceneID="2dd-zf-LhI">
             <objects>
-                <viewController id="P3W-z4-76M" sceneMemberID="viewController">
+                <viewController id="P3W-z4-76M" customClass="game2Controller" customModule="which_taiyaki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vGW-ZA-oaf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-UD-TZp">
-                                <rect key="frame" x="-13" y="223" width="253" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31672279479999998" green="0.37352099929999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="42"/>
-                                <color key="textColor" red="0.67419996156546069" green="0.80177029700000002" blue="0.57152376119406589" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpS-xW-qKj">
                                 <rect key="frame" x="-14" y="569" width="443" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.32974702480000001" green="0.3889234419" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="41"/>
                                 <state key="normal" title="もう一回チャレンジ！">
-                                    <color key="titleColor" red="0.67511014359999999" green="0.59245826660000001" blue="0.80177029700000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bax-sZ-rCy" kind="presentation" modalPresentationStyle="fullScreen" id="kAc-Kt-cim"/>
@@ -168,7 +156,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-Zj-GNE">
                                 <rect key="frame" x="-14" y="665" width="432" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.31672279479999998" green="0.37352099929999999" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="38"/>
                                 <state key="normal" title="タイトルに戻る">
                                     <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -178,25 +166,34 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-RW-bNz">
-                                <rect key="frame" x="113" y="316" width="188" height="179"/>
+                                <rect key="frame" x="0.0" y="313" width="414" height="182"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="170"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[ポイント]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-UD-TZp">
+                                <rect key="frame" x="76" y="219" width="253" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="42"/>
+                                <color key="textColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J8g-oN-sLk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <connections>
+                        <outlet property="lavel1" destination="rmh-RW-bNz" id="hGf-Zx-Bt9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5L4-Sd-HJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2540.579710144928" y="91.741071428571431"/>
+            <point key="canvasLocation" x="2110" y="92"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dfn-xb-ZjX"/>
-        <segue reference="kAc-Kt-cim"/>
+        <segue reference="OP8-oD-GGw"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="good" width="1280" height="1280"/>

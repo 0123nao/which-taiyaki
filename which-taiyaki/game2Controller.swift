@@ -8,35 +8,22 @@
 import UIKit
 
 class game2Controller: UIViewController {
-    var number: Int!
+    var number: Int = 0
+    @IBOutlet var lavel1: UILabel!
     
-    @IBOutlet var image1: UIImageView!
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        lavel1.text = String(number)
         
         
-        number = Int.random(in: 0...3)
-        
-            if number == 0 {
-                image1.image = UIImage(named: "ta1")
-               
-               
-            } else if number == 1 {
-                image1.image = UIImage(named: "ta2")
-             
-            } else if number == 2 {
-                image1.image = UIImage(named: "ta3")
-                              
-            } else {
-                image1.image = UIImage(named: "ta4")
-               
                 
     }
 
-        }
+        
     }
     
 
