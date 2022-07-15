@@ -11,6 +11,7 @@ class game1Controller: UIViewController {
     
     var number: Int!
     var point: Int! = 0
+    var reciever: String!
     @IBOutlet var pointlabel: UILabel!
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -137,6 +138,10 @@ class game1Controller: UIViewController {
             let result: game2Controller = (segue.destination as? game2Controller)!
             // ViewControllerのtextVC2にメッセージを設定
             result.number = point
+            
+            let saveData: UserDefaults = UserDefaults.standard
+            let count = saveData.integer(forKey: "count")
+            saveData.setValue(count + 1, forKey: "count")
         }
     }
 }

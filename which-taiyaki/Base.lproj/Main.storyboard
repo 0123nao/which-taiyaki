@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
@@ -21,45 +21,106 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="haikei" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-Ch-Ytg">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="haikei" translatesAutoresizingMaskIntoConstraints="NO" id="Esn-Ch-Ytg">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-IQ-jHI">
-                                <rect key="frame" x="93" y="697" width="229" height="94"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EY7-IQ-jHI">
+                                <rect key="frame" x="10" y="718" width="394" height="94"/>
                                 <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="94" id="P2j-kj-2at"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="66"/>
                                 <state key="normal" title="start">
                                     <color key="titleColor" red="0.80177029696377844" green="0.60657116123053223" blue="0.64921316006786889" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bax-sZ-rCy" kind="presentation" modalPresentationStyle="fullScreen" id="OP8-oD-GGw"/>
+                                    <segue destination="Tlw-06-okL" kind="presentation" modalPresentationStyle="fullScreen" id="aCJ-zx-vx2"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="USP-Qd-x1l">
-                                <rect key="frame" x="109" y="438" width="317" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="1"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ー　which Taiyaki　ー" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyI-Dr-8U0">
-                                <rect key="frame" x="-12" y="44" width="438" height="173"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="which Taiyaki" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kyI-Dr-8U0">
+                                <rect key="frame" x="0.0" y="89" width="414" height="47"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="37"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="EY7-IQ-jHI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="0Ai-TC-btn"/>
+                            <constraint firstAttribute="trailing" secondItem="kyI-Dr-8U0" secondAttribute="trailing" id="0c8-3D-fK2"/>
+                            <constraint firstItem="Esn-Ch-Ytg" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9Ei-O3-lnF"/>
+                            <constraint firstItem="kyI-Dr-8U0" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="De8-9P-aeE"/>
+                            <constraint firstItem="Esn-Ch-Ytg" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FP2-dj-SKn"/>
+                            <constraint firstItem="kyI-Dr-8U0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="45" id="Fah-iB-O9c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="EY7-IQ-jHI" secondAttribute="bottom" constant="50" id="Moj-ea-ul7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EY7-IQ-jHI" secondAttribute="trailing" constant="10" id="Xjp-2V-PgU"/>
+                            <constraint firstItem="Esn-Ch-Ytg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="ZAs-Pl-AEb"/>
+                            <constraint firstAttribute="bottom" secondItem="Esn-Ch-Ytg" secondAttribute="bottom" id="ZiO-bl-6F7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="REK-eZ-bs6"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-313.04347826086956" y="92.410714285714278"/>
+            <point key="canvasLocation" x="-1191" y="102"/>
+        </scene>
+        <!--Apple View Controller-->
+        <scene sceneID="BrH-e5-0gQ">
+            <objects>
+                <viewController id="Tlw-06-okL" customClass="AppleViewController" customModule="which_taiyaki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="82i-rP-1Zt">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niy-5m-5Dh">
+                                <rect key="frame" x="10" y="234" width="394" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="66"/>
+                                <state key="normal" title="かんたん">
+                                    <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="easy" destination="Tlw-06-okL" eventType="touchUpInside" id="kVy-6x-UaG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iy5-25-h64">
+                                <rect key="frame" x="10" y="373" width="394" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="66"/>
+                                <state key="normal" title="ふつう">
+                                    <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="normal" destination="Tlw-06-okL" eventType="touchUpInside" id="How-xC-87p"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D8u-Wy-4JR">
+                                <rect key="frame" x="10" y="511" width="394" height="94"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="66"/>
+                                <state key="normal" title="むずかしい">
+                                    <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="difficult" destination="Tlw-06-okL" eventType="touchUpInside" id="7py-wk-LJt"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="3vN-lU-pHg"/>
+                        <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <connections>
+                        <segue destination="Bax-sZ-rCy" kind="presentation" identifier="a" modalPresentationStyle="fullScreen" id="cxm-QI-sGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KHG-Mt-Plu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236" y="103"/>
         </scene>
         <!--Game1 Controller-->
         <scene sceneID="XGk-Ug-nTy">
@@ -69,55 +130,87 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-BO-gaQ">
-                                <rect key="frame" x="55" y="827" width="108" height="27"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="27"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="                          0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Jq-O8r">
-                                <rect key="frame" x="214" y="827" width="149" height="28"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ta5" translatesAutoresizingMaskIntoConstraints="NO" id="am3-L1-3vB">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ta5" translatesAutoresizingMaskIntoConstraints="NO" id="am3-L1-3vB">
                                 <rect key="frame" x="0.0" y="112" width="414" height="273"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="P7m-fB-IfR"/>
+                                    <constraint firstAttribute="height" constant="273" id="Uo3-Ql-GTT"/>
+                                </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-Wg-0LC">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua3-Wg-0LC">
                                 <rect key="frame" x="0.0" y="377" width="196" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="F2G-kV-8yq"/>
+                                    <constraint firstAttribute="height" constant="181" id="K4i-fk-RJ6"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="no good"/>
                                 <connections>
                                     <action selector="c" destination="Bax-sZ-rCy" eventType="touchUpInside" id="fKz-5t-4M1"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-gz-ge4">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CK-gz-ge4">
                                 <rect key="frame" x="218" y="377" width="196" height="181"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="196" id="bjV-gM-xWJ"/>
+                                    <constraint firstAttribute="height" constant="181" id="xeE-LC-55N"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="good"/>
                                 <connections>
                                     <action selector="b" destination="Bax-sZ-rCy" eventType="touchUpInside" id="PFj-4o-5yz"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-G7-82J">
-                                <rect key="frame" x="55" y="641" width="304" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w2Y-G7-82J">
+                                <rect key="frame" x="20" y="570" width="374" height="53"/>
                                 <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="kXd-jj-BcF"/>
+                                    <constraint firstAttribute="width" constant="374" id="tTf-bj-4zu"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="41"/>
                                 <state key="normal" title="中身を取り出す">
                                     <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="a" destination="Bax-sZ-rCy" eventType="touchUpInside" id="Puh-Xa-eBU"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9NX-iM-dhi">
+                                <rect key="frame" x="20" y="814.5" width="374" height="27.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ポイント" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aKP-BO-gaQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="225" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="27"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="                          0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u4j-Jq-O8r">
+                                        <rect key="frame" x="225" y="0.0" width="149" height="27.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mw3-u6-cOe"/>
                         <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Mw3-u6-cOe" firstAttribute="trailing" secondItem="9NX-iM-dhi" secondAttribute="trailing" constant="20" id="GPY-6c-muE"/>
+                            <constraint firstItem="Mw3-u6-cOe" firstAttribute="trailing" secondItem="w2Y-G7-82J" secondAttribute="trailing" constant="20" id="JDw-TT-3t8"/>
+                            <constraint firstItem="ua3-Wg-0LC" firstAttribute="top" secondItem="Mw3-u6-cOe" secondAttribute="top" constant="333" id="Mpw-gs-76N"/>
+                            <constraint firstItem="9NX-iM-dhi" firstAttribute="leading" secondItem="Mw3-u6-cOe" secondAttribute="leading" constant="20" id="PvU-e0-Ywh"/>
+                            <constraint firstItem="6CK-gz-ge4" firstAttribute="trailing" secondItem="Mw3-u6-cOe" secondAttribute="trailing" id="WwB-PY-3mW"/>
+                            <constraint firstItem="w2Y-G7-82J" firstAttribute="leading" secondItem="Mw3-u6-cOe" secondAttribute="leading" constant="20" id="chO-E1-MoE"/>
+                            <constraint firstItem="am3-L1-3vB" firstAttribute="trailing" secondItem="Mw3-u6-cOe" secondAttribute="trailing" id="djH-R1-XvU"/>
+                            <constraint firstItem="w2Y-G7-82J" firstAttribute="top" secondItem="ua3-Wg-0LC" secondAttribute="bottom" constant="12" id="eZb-dF-xfp"/>
+                            <constraint firstItem="am3-L1-3vB" firstAttribute="leading" secondItem="Mw3-u6-cOe" secondAttribute="leading" id="mSN-Iz-cbu"/>
+                            <constraint firstItem="Mw3-u6-cOe" firstAttribute="bottom" secondItem="9NX-iM-dhi" secondAttribute="bottom" constant="20" id="nw9-sr-vZ2"/>
+                            <constraint firstItem="ua3-Wg-0LC" firstAttribute="leading" secondItem="Mw3-u6-cOe" secondAttribute="leading" id="smH-SD-b8a"/>
+                            <constraint firstItem="am3-L1-3vB" firstAttribute="top" secondItem="Mw3-u6-cOe" secondAttribute="top" constant="68" id="w2m-eA-J9g"/>
+                            <constraint firstItem="6CK-gz-ge4" firstAttribute="top" secondItem="Mw3-u6-cOe" secondAttribute="top" constant="333" id="wV6-Qc-Gep"/>
+                            <constraint firstItem="w2Y-G7-82J" firstAttribute="top" secondItem="6CK-gz-ge4" secondAttribute="bottom" constant="12" id="yHn-2b-T2E"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="kKa-zO-ujq"/>
                     <connections>
@@ -131,7 +224,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vAQ-NX-ym4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="814" y="102"/>
+            <point key="canvasLocation" x="813.04347826086962" y="101.78571428571428"/>
         </scene>
         <!--Game2 Controller-->
         <scene sceneID="2dd-zf-LhI">
@@ -141,22 +234,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpS-xW-qKj">
-                                <rect key="frame" x="-14" y="569" width="443" height="53"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ポイント" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-UD-TZp">
+                                <rect key="frame" x="-13" y="223" width="253" height="47"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="47" id="niF-MM-3jw"/>
+                                    <constraint firstAttribute="width" constant="253" id="pPY-zP-U4R"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="42"/>
+                                <color key="textColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PpS-xW-qKj">
+                                <rect key="frame" x="0.0" y="696" width="414" height="53"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="41"/>
-                                <state key="normal" title="もう一回チャレンジ！">
+                                <state key="normal" title="もう一回！">
                                     <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <segue destination="Bax-sZ-rCy" kind="presentation" modalPresentationStyle="fullScreen" id="kAc-Kt-cim"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-Zj-GNE">
-                                <rect key="frame" x="-14" y="665" width="432" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471669781875" blue="0.35470708273624807" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-Zj-GNE">
+                                <rect key="frame" x="0.0" y="792" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.41474136709999998" green="0.35667471670000001" blue="0.35470708270000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="38"/>
                                 <state key="normal" title="タイトルに戻る">
                                     <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -165,23 +267,32 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" id="XV7-1u-awM"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-RW-bNz">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-RW-bNz">
                                 <rect key="frame" x="0.0" y="313" width="414" height="182"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="414" id="2LI-LW-o8x"/>
+                                    <constraint firstAttribute="height" constant="182" id="LeL-jz-crx"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="170"/>
                                 <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="[ポイント]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RdP-UD-TZp">
-                                <rect key="frame" x="76" y="219" width="253" height="47"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="SetoFontSP_sjis" family="SetoFontSP_sjis" pointSize="42"/>
-                                <color key="textColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="J8g-oN-sLk"/>
                         <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="FPX-Zj-GNE" firstAttribute="top" secondItem="PpS-xW-qKj" secondAttribute="bottom" constant="43" id="DxC-Kl-2pa"/>
+                            <constraint firstItem="RdP-UD-TZp" firstAttribute="top" secondItem="J8g-oN-sLk" secondAttribute="top" constant="179" id="G7O-nA-PVq"/>
+                            <constraint firstAttribute="trailing" secondItem="FPX-Zj-GNE" secondAttribute="trailing" id="GFb-fU-jgC"/>
+                            <constraint firstAttribute="trailing" secondItem="PpS-xW-qKj" secondAttribute="trailing" id="Qqm-iE-Nj4"/>
+                            <constraint firstItem="RdP-UD-TZp" firstAttribute="leading" secondItem="vGW-ZA-oaf" secondAttribute="leading" constant="-13" id="WZi-bA-6f9"/>
+                            <constraint firstItem="FPX-Zj-GNE" firstAttribute="leading" secondItem="vGW-ZA-oaf" secondAttribute="leading" id="bT2-su-eic"/>
+                            <constraint firstItem="J8g-oN-sLk" firstAttribute="bottom" secondItem="FPX-Zj-GNE" secondAttribute="bottom" constant="20" id="duj-X7-m0z"/>
+                            <constraint firstItem="PpS-xW-qKj" firstAttribute="leading" secondItem="vGW-ZA-oaf" secondAttribute="leading" id="fQ5-zw-TCT"/>
+                            <constraint firstItem="rmh-RW-bNz" firstAttribute="trailing" secondItem="J8g-oN-sLk" secondAttribute="trailing" id="sD3-BO-cze"/>
+                            <constraint firstItem="rmh-RW-bNz" firstAttribute="top" secondItem="RdP-UD-TZp" secondAttribute="bottom" constant="43" id="wVk-Fv-C4K"/>
+                            <constraint firstItem="rmh-RW-bNz" firstAttribute="leading" secondItem="J8g-oN-sLk" secondAttribute="leading" id="zun-YL-oF3"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="lavel1" destination="rmh-RW-bNz" id="hGf-Zx-Bt9"/>
@@ -189,19 +300,21 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5L4-Sd-HJA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2110" y="92"/>
+            <point key="canvasLocation" x="1691" y="102"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="OP8-oD-GGw"/>
+        <segue reference="Dfn-xb-ZjX"/>
+        <segue reference="kAc-Kt-cim"/>
     </inferredMetricsTieBreakers>
+    <color key="tintColor" name="AccentColor"/>
     <resources>
         <image name="good" width="1280" height="1280"/>
         <image name="haikei" width="414" height="896"/>
         <image name="no good" width="1280" height="1280"/>
         <image name="ta5" width="1280" height="1280"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
