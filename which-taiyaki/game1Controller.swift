@@ -12,6 +12,7 @@ class game1Controller: UIViewController {
     var number: Int!
     var point: Int! = 0
     var reciever: String!
+    var str  = ""
     @IBOutlet var pointlabel: UILabel!
     @IBOutlet var button1: UIButton!
     @IBOutlet var button2: UIButton!
@@ -39,20 +40,51 @@ class game1Controller: UIViewController {
         
     }
     @IBAction func a (){
-        number = Int.random(in: 1...4)
+        if reciever == "easy" {
+            number = Int.random(in: 1...4)
+        } else if
+            reciever == "normal" {
+            number = Int.random(in: 1...7)
+        } else
+        {  number = Int.random(in: 1...11)
+        }
+        
         
         if number == 1 {
-            image1.image = UIImage(named: "ta1")
+            image1.image = UIImage(named: "ta1g")
             
             
         } else if number == 2 {
-            image1.image = UIImage(named: "ta2")
+            image1.image = UIImage(named: "ta2g")
             
         } else if number == 3 {
-            image1.image = UIImage(named: "ta3")
+            image1.image = UIImage(named: "ta3b")
+            
+        } else if number == 4 {
+            image1.image = UIImage(named: "ta4b")
+            
+        } else if number == 5 {
+            image1.image = UIImage(named: "ta6g")
+            
+        } else if number == 6 {
+            image1.image = UIImage(named: "ta7g")
+            
+        } else if number == 7 {
+            image1.image = UIImage(named: "ta8b")
+            
+        } else if number == 8 {
+            image1.image = UIImage(named: "ta9b")
+            
+        } else if number == 9 {
+            image1.image = UIImage(named: "ta10g")
+            
+        } else if number == 10 {
+            image1.image = UIImage(named: "ta11b")
             
         } else {
-            image1.image = UIImage(named: "ta4")
+            image1.image = UIImage(named: "ta12b")
+            
+            
             
         }
         button1.isHidden = true
@@ -63,35 +95,86 @@ class game1Controller: UIViewController {
     // 良いたい焼きのボタンが押された時
     // numberが１，２の時は１点
     @IBAction func b (){
-        
+        if reciever == "easy" {
+            number = Int.random(in: 1...4)
+        } else if
+            reciever == "normal" {
+            number = Int.random(in: 1...7)
+        } else
+        {  number = Int.random(in: 1...11)
+        }
         if number == 1 {
             point = point + 1
             
         } else if number == 2 {
             point = point + 1
+            
+        } else if number == 5 {
+            point = point + 1
+            
+        } else if number == 6 {
+            point = point + 1
+            
+        } else if number == 9 {
+            point = point + 1
+            
             
         } else if number == 3 {
             self.performSegue(withIdentifier: "result", sender: nil)
             
         } else if number == 4 {
             self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 7 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 8 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 10 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 11 {
+            self.performSegue(withIdentifier: "result", sender: nil)
         }
         pointlabel.text = String(point!)
         
-        number = Int.random(in: 1...4)
+       
         
         if number == 1 {
-            image1.image = UIImage(named: "ta1")
+            image1.image = UIImage(named: "ta1g")
             
             
         } else if number == 2 {
-            image1.image = UIImage(named: "ta2")
+            image1.image = UIImage(named: "ta2g")
             
         } else if number == 3 {
-            image1.image = UIImage(named: "ta3")
+            image1.image = UIImage(named: "ta3b")
+            
+        } else if number == 4 {
+            image1.image = UIImage(named: "ta4b")
+            
+        } else if number == 5 {
+            image1.image = UIImage(named: "ta6g")
+            
+        } else if number == 6 {
+            image1.image = UIImage(named: "ta7g")
+            
+        } else if number == 7 {
+            image1.image = UIImage(named: "ta8b")
+            
+        } else if number == 8 {
+            image1.image = UIImage(named: "ta9b")
+            
+        } else if number == 9 {
+            image1.image = UIImage(named: "ta10g")
+            
+        } else if number == 10 {
+            image1.image = UIImage(named: "ta11b")
             
         } else {
-            image1.image = UIImage(named: "ta4")
+            image1.image = UIImage(named: "ta12b")
+            
             
         }
         
@@ -100,39 +183,88 @@ class game1Controller: UIViewController {
     // 悪いたい焼きのボタンが押された時
     // numberが3,4の時はおわり
     @IBAction func c (){
+        if reciever == "easy" {
+            number = Int.random(in: 1...4)
+        } else if
+            reciever == "normal" {
+            number = Int.random(in: 1...7)
+        }else
+        {  number = Int.random(in: 1...11)
+        }
+        
         if number == 1 {
             self.performSegue(withIdentifier: "result", sender: nil)
             
         } else if number == 2 {
             self.performSegue(withIdentifier: "result", sender: nil)
             
+        } else if number == 5 {
+            self.performSegue(withIdentifier: "result", sender: nil)
             
+        } else if number == 6 {
+            self.performSegue(withIdentifier: "result", sender: nil)
+            
+        } else if number == 9 {
+            self.performSegue(withIdentifier: "result", sender: nil)
         } else if number == 3 {
-           point = point + 1
+            point = point + 1
             
         } else if number == 4 {
-           point = point + 1
-    }
+            point = point + 1
+            
+        } else if number == 7 {
+            point = point + 1
+            
+        } else if number == 8 {
+            point = point + 1
+            
+        } else if number == 10 {
+            point = point + 1
+            
+        } else if number == 11 {
+            point = point + 1
+        }
         pointlabel.text = String(point!)
         
-        number = Int.random(in: 1...4)
-        
+       
         if number == 1 {
-            image1.image = UIImage(named: "ta1")
+            image1.image = UIImage(named: "ta1g")
             
             
         } else if number == 2 {
-            image1.image = UIImage(named: "ta2")
+            image1.image = UIImage(named: "ta2g")
             
         } else if number == 3 {
-            image1.image = UIImage(named: "ta3")
+            image1.image = UIImage(named: "ta3b")
+            
+        } else if number == 4 {
+            image1.image = UIImage(named: "ta4b")
+            
+        } else if number == 5 {
+            image1.image = UIImage(named: "ta6g")
+            
+        } else if number == 6 {
+            image1.image = UIImage(named: "ta7g")
+            
+        } else if number == 7 {
+            image1.image = UIImage(named: "ta8b")
+            
+        } else if number == 8 {
+            image1.image = UIImage(named: "ta9b")
+            
+        } else if number == 9 {
+            image1.image = UIImage(named: "ta10g")
+            
+        } else if number == 10 {
+            image1.image = UIImage(named: "ta11b")
             
         } else {
-            image1.image = UIImage(named: "ta4")
+            image1.image = UIImage(named: "ta12b")
+            
             
         }
-       
-}
+        
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if (segue.identifier == "result") {
             let result: game2Controller = (segue.destination as? game2Controller)!

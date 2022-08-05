@@ -114,6 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="3vN-lU-pHg"/>
                         <color key="backgroundColor" red="0.41474136709999998" green="0.3268858194" blue="0.24312108760000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="I1K-mh-eh9"/>
                     <connections>
                         <segue destination="Bax-sZ-rCy" kind="presentation" identifier="a" modalPresentationStyle="fullScreen" id="cxm-QI-sGg"/>
                     </connections>
@@ -125,7 +126,7 @@
         <!--Game1 Controller-->
         <scene sceneID="XGk-Ug-nTy">
             <objects>
-                <viewController id="Bax-sZ-rCy" customClass="game1Controller" customModule="which_taiyaki" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="game1Controller" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Bax-sZ-rCy" customClass="game1Controller" customModule="which_taiyaki" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sxw-Qa-Ezc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -253,7 +254,7 @@
                                     <color key="titleColor" red="0.80177029700000002" green="0.60657116119999999" blue="0.64921316009999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Bax-sZ-rCy" kind="presentation" modalPresentationStyle="fullScreen" id="kAc-Kt-cim"/>
+                                    <segue destination="Tlw-06-okL" kind="presentation" modalPresentationStyle="fullScreen" id="hHn-dF-Ugd"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-Zj-GNE">
@@ -304,8 +305,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Dfn-xb-ZjX"/>
-        <segue reference="kAc-Kt-cim"/>
+        <segue reference="cxm-QI-sGg"/>
+        <segue reference="hHn-dF-Ugd"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" name="AccentColor"/>
     <resources>
